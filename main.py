@@ -3,15 +3,14 @@ import os
 import webapp2
 
 
-class HandleHome(webapp2.RequestHandler):
-    template = jinja_environment.get_template('index.html')
-    self.response.out.write(template.render())
-jinja_environment = jinja2.Environment(
-  loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
-
+class EnterInfoHandler(webapp2.RequestHandler):
+    def get(self):  # for a get request
+        welcome_template = the_jinja_env.get_template('templates/welcome.html')
+        self.response.write(welcome_template.render())
+the_jinja_env = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True)
 app = webapp2.WSGIApplication([
   ('/', HandleHome),
-  ('/send', HandleSend),
-  ('/_ah/channel/connected/', HandleConnect),
-  ('/_ah/channel/disconnected/', HandleDisconnect),
 ], debug=True)
