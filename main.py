@@ -10,7 +10,7 @@ the_jinja_env = jinja2.Environment(
 
 class RegisterHandler(webapp2.RequestHandler):
   def get(self):
-      donation_template = the_jinja_env.get_template('htc.html')
+      donation_template = the_jinja_env.get_template('donation.html')
       self.response.out.write(donation_template.render())
   def post(self):
       template1 = the_jinja_env.get_template('donation.html')
@@ -29,7 +29,7 @@ class Home(webapp2.RequestHandler):
 
 class About(webapp2.RequestHandler):
     def get(self):
-        template = the_jinja_env.get_template('about.html')
+        template = the_jinja_env.get_template('info.html')
         self.response.out.write(template.render())
 
 class GetInvolved(webapp2.RequestHandler):
@@ -58,9 +58,9 @@ app = webapp2.WSGIApplication([
   ('/vision', Vision),
   ('/getinvolved', GetInvolved),
   ('/biographies', Biographies),
-  ('/donate1', Donate),
+  ('/donate1', RegisterHandler),
   ('/donate', Donate),
   ('/about', About),
 ], debug=True)
 #info about us
-#vision
+#vision Vision
