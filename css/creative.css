@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Times New Roman', 'Helvetica Neue', Arial, ;
 }
 
 hr {
@@ -35,18 +35,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, ;
 }
 
 .bg-primary {
-  background-color: #fff075 !important;
+  background-image: url("../img/downtown.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
 
 .bg-dark {
   background-color: #093ce2 !important;
 }
 
-.text-faded {
+.text-faded{
   color: #000000;
 }
 
@@ -83,7 +89,7 @@ img::-moz-selection {
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, ;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -93,7 +99,7 @@ img::-moz-selection {
   font-weight: 600;
   text-transform: uppercase;
   color: #093ce2;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, ;
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -174,14 +180,13 @@ header img.header nav {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/images1.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+
 }
 
 header.masthead hr {
@@ -216,11 +221,11 @@ header.masthead p {
    animation: opac 0.8s;
 }
 .n3-wide {
-   letter-spacing: 10px;
+   letter-spacing: 5px;
 }
 .n3-red, .n3-hover-red:hover {
-   color: #fff!important;
-   background-color: #093ce2!important;
+   color: #000000!important;
+   background-color: #f6f696!important;
    opacity: 0.9s;
 }
 .n3-padding-large {
@@ -230,7 +235,7 @@ header.masthead p {
    text-align: center!important;
 }
 .n3-xlarge {
-   font-size: 26px!important;
+   font-size: 20px!important;
 }
 .n3-animate-opacity {
    animation: opac 0.8s;
@@ -301,7 +306,7 @@ header.masthead p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial,  ;
   float: none;
 }
 
@@ -344,7 +349,7 @@ header.masthead p {
   text-transform: uppercase;
   border: none;
   border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, ;
   background-color: #093ce2;
 }
 
