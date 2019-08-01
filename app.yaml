@@ -14,7 +14,7 @@ handlers:
   static_dir: img
 - url: /js
   static_dir: js
-- url: /spartanhome\.jpg
+- url: /spartanhome.jpg
   static_files: spartanhome.jpg
   upload: spartanhome\.ico
 - url: /.*
